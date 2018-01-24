@@ -16,7 +16,7 @@
     </ul>
   </header>
   <div class="clearfix"></div>
-  <form class="add_movie_form" id="add_movie_form">
+  <form class="add_movie_form" id="add_movie_form" action="mov.js">
     <h2>Add a New Movie</h2>
     <ul>
       <li>
@@ -64,7 +64,7 @@
           <textarea rows="6" name="cast"></textarea>
       </li>
     </ul>
-    <button id="submit">SAVE</button>
+    <button id="submit" onsubmit="event.preventDefault();addmovie();">SAVE</button>
   </form>
   <div class="clearfix"></div>
   <footer class="">
